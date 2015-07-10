@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Clientes</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			function equalHeight(group) {
+				var tallest = 0;
+				group.each(function() {
+					var thisHeight = $(this).height();
+					if(thisHeight > tallest) {
+						tallest = thisHeight;
+					}
+				});
+				group.height(tallest);
+			}	
+			equalHeight($(".box-1 .inner"));
+		})
+	</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="inner">
+        <h1 class="logo"><a href="index_admin.html">Pet clinic</a></h1>
+        <div class="fright">
+            <div class="header-meta">
+            
+              <div class="col-elem">
+                   <br> Bienvenido 
+                    <span class="phone">
+                        admin
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="sf-menu">
+                   <li>
+                        <a href="#">Mantenimientos</a>
+                        <ul>
+                            <li><a href="lista_clientes.html">Cliente</a></li>
+                            <li><a href="lista_pacientes.html">Paciente</a></li>
+                        
+                            <li  class="current"><a href="lista_orden_atencion.html">Orden Atenci&oacute;n</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </div>
+</header>
+<!-- Content -->
+<section id="content"><div class="ic">More Website Templates @ TemplateMonster.com. July 23, 2012!</div>
+  
+        <div class="wrapper">
+        	<article class="grid_7 suffix_1" width="100px;">
+            	
+            </article>
+            <article class="formulario">
+            	<h2>Lista de Ordenes de Atenci&oacute;n:</h2>
+    
+
+                <table>
+                    <thead> 
+                        <th>C&oacute;digo Orden Atenci&oacute;n</th>
+                        <th>Paciente</th>
+                        <th>Fecha</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center"><a href="#">1</a></td>
+                            <td align="center">Rambo</td>
+                            <td align="center">21/06/2015</td>
+                            <td align="center"><a href="#"><img src="images/delete8.gif"></a></td>
+                        </tr>
+                         <tr>
+                           <td align="center"><a href="#">1</a></td>
+                            <td align="center">Cielo</td>
+                            <td align="center">22/06/2015</td>
+                            <td align="center"><a href="#"><img src="images/delete8.gif"></a></td>
+                        </tr>
+                        <tr>
+                           <td align="center"><a href="#">1</a></td>
+                            <td align="center">Sicario</td>
+                            <td align="center">23/06/2015</td>
+                            <td align="center"><a href="#"><img src="images/delete8.gif"></a></td>
+                        </tr>
+
+                    </tbody>                    
+                </table>
+                    <div class="btns">
+                        <br><br>
+                        <a class="link" href="orden_atencion.html">Nueva Orden de Atenci&oacute;n</a>
+                    </div>
+
+            </article>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="copyright">
+        &copy; 2012 <strong class="footer-logo">Pet clinic</strong>
+        <div><a rel="nofollow" href="#">UPC</a></div>
+    </div>
+    <ul class="social-list">
+    	<li><a href="#"><img src="images/social-link-1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/social-link-2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/social-link-3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/social-link-4.jpg" alt=""></a></li>
+    </ul>
+</footer>
+</body>
+</html>
